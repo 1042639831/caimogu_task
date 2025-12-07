@@ -35,13 +35,6 @@ public class App
             log.error("CAI_MO_GU_TOKEN 参数没有配置(浏览器中f12 应用程序 Cookie 中的 CAIMOGU )");
             return;
         }
-        log.error(githubApiToken);
-        log.error(ownerRepo);
-        StringBuilder sb = new StringBuilder();
-        for (char c : caiMoGuToken.toCharArray()) {
-            sb.append(c).append(" ");
-        }
-        log.error(sb.toString());
         log.error("配置设置正常");
 
         String gameIdsFileName="gameIds.txt";
